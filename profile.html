@@ -165,35 +165,50 @@
       <!-- header done -->
 
       <!-- secondNav  -->
-      <div class="d-block d-md-none sticky-top">
+       <!-- secondNav  -->
+       <div class="d-block d-md-none sticky-top">
         <div class="header">
           <div class="logo">
-            <a href="/"><img src="/img/logo3.jpeg" width="100px" alt="" /></a>
+            <a href="/"><img src="/img/logo3.jpeg" alt="" /></a>
           </div>
 
           <div class="navset">
             <ul>
               <li class="ps-3">
                 <a href=""><img src="/img/ngn.png" width="20px" alt="" /></a>
-                &nbsp;🇳🇬🇳
+                
               </li>
               <li class="ps-4">
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
               </li>
-              <li class="ps-3">
-                <a href="" data-bs-toggle="modal"
+              <li class="dropdown ps-3">
+                <a class="dropdown" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="" data-bs-toggle="modal"
                 data-bs-target="#authentication"
                   ><img src="/img/default_icon.jpg" width="30px" alt=""
                 /></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/profile.html">My Account</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-arrow-right-to-bracket p-2"></i
+                      >Signout</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="pe-2 ps-2">
                 <a href="" data-bs-toggle="modal"
-                data-bs-target="#cartcheckout"><i class="fa-solid fa-cart-shopping"></i></a>
+                data-bs-target="#cartcheckout2"><i class="fa-solid fa-cart-shopping"></i></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <!-- seconNav done  -->
       <!-- seconNav done  -->
     </div>
     <!-- carousel done -->
@@ -204,12 +219,12 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-4">
-            <button type="submit" class="btn w-100 p-3 yoloss" id="profile">
+            <button type="submit" class="btn w-100 p-1 p-sm-3 yoloss" id="profile">
               My Account
             </button>
           </div>
           <div class="col-4">
-            <button type="submit" class="btn w-100 p-3 yoloss" id="orders">
+            <button type="submit" class="btn w-100 p-1 p-sm-3 yoloss" id="orders">
               My Orders
             </button>
           </div>
