@@ -34,3 +34,32 @@ Backk2.onclick = function(){
     Formm3.style.left = "500px";
     progress_sec.style.width = "240px";
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const minusBtn = document.querySelector(".minus2");
+    const plusBtn = document.querySelector(".plus2");
+    const quantElement = document.querySelector(".item-quantity2");
+  
+    // Initialize item quantity
+    let quantity = 1;
+  
+    // Function to update and display the item quantity
+    function updateQuantity() {
+        quantElement.textContent = quantity;
+    }
+  
+    // Event listener for the minus button
+    minusBtn.addEventListener("click", function() {
+        if (quantity > 1) {
+            quantity -= 1;
+            updateQuantity();
+        }
+    });
+  
+    // Event listener for the plus button
+    plusBtn.addEventListener("click", function() {
+        quantity += 1;
+        updateQuantity();
+    });
+  });
