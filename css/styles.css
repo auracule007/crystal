@@ -31,13 +31,13 @@
   .navset ul li{
     text-decoration: none !important;
     display: inline;
-    position: relative;
+    /* position: relative; */
   }
   .navset ul li a{
     text-decoration: none !important;
     display: inline;
     color: #000;
-    position: relative;
+    /* position: relative; */
   }
 /* 90BE6D */
 /* 6B4B3E */
@@ -582,38 +582,7 @@
 
 
 /* search */
- li.cformk form {
-    background: white;
-  }
- li .gbemi {
-    background: transparent;
-    border: none;
-    outline: none;
-    box-shadow: none;
-           
-  }
- li .gbemi:focus {
-    background: transparent;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    
-  }
-  .gracias {
-    background: #000;
-    color: white;
-    box-shadow: none;
-  }
-  .gracias:hover {
-    color: white;
-    transition: ease-out .5s;
-    /* transform: translate3d(-40px); */
-  }
-  .gracias:focus {
-    background: #000;
-    color: white;
-    box-shadow: none;
-  }
+
 /* search done */
 @media(max-width: 991.98px){
     .carousel .carousel-inner{
