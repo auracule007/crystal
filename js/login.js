@@ -19,9 +19,7 @@ registerBtn.addEventListener("click", () => {
   loginContainer.style.display = "none";
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const minusButton = document.querySelector(".minus");
   const plusButton = document.querySelector(".plus");
   const quantityElement = document.querySelector(".item-quantity");
@@ -31,21 +29,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to update and display the item quantity
   function updateQuantity() {
-      quantityElement.textContent = quantity;
+    quantityElement.textContent = quantity;
   }
 
   // Event listener for the minus button
-  minusButton.addEventListener("click", function() {
-      if (quantity > 1) {
-          quantity -= 1;
-          updateQuantity();
-      }
+  minusButton.addEventListener("click", function () {
+    if (quantity > 1) {
+      quantity -= 1;
+      updateQuantity();
+    }
   });
 
   // Event listener for the plus button
-  plusButton.addEventListener("click", function() {
-      quantity += 1;
-      updateQuantity();
+  plusButton.addEventListener("click", function () {
+    quantity += 1;
+    updateQuantity();
   });
 });
 
@@ -60,26 +58,37 @@ var Back2 = document.getElementById("Back2");
 
 var progress = document.getElementById("progress");
 
-Next1.onclick = function(){
-    Form1.style.left = "-1500px";
-    Form2.style.left = "-20px";
-    progress.style.width = "240px";
-}
+Next1.onclick = function () {
+  Form1.style.left = "-1500px";
+  Form2.style.left = "-20px";
+  progress.style.width = "240px";
+};
 
-Back1.onclick = function(){
-    Form1.style.left = "-20px";
-    Form2.style.left = "1500px";
-    progress.style.width = "120px";
-}
+Back1.onclick = function () {
+  Form1.style.left = "-20px";
+  Form2.style.left = "1500px";
+  progress.style.width = "120px";
+};
 
-Next2.onclick = function(){
-    Form2.style.left = "-1500px";
-    Form3.style.left = "20px";
-    progress.style.width = "360px"; 
-}
+Next2.onclick = function () {
+  Form2.style.left = "-1500px";
+  Form3.style.left = "20px";
+  progress.style.width = "360px";
+};
 
-Back2.onclick = function(){
-    Form2.style.left = "-25px";
-    Form3.style.left = "1500px";
-    progress.style.width = "240px";
-}
+Back2.onclick = function () {
+  Form2.style.left = "-25px";
+  Form3.style.left = "1500px";
+  progress.style.width = "240px";
+};
+
+const searchBtn = document.querySelector(".fa-magnifying-glass");
+const input = document.querySelector(".form-control");
+
+searchBtn.addEventListener("mouseover", () => {
+  if (input.style.display === "none") {
+    input.style.display = "block";
+  } else {
+    input.style.display = "none";
+  }
+});
